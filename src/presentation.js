@@ -35,7 +35,9 @@ const theme = createTheme(
 );
 
 const images = {
-    howItWorks: require('./assets/howHtmlWork.svg')
+    howItWorks: require('./assets/img/howHtmlWork.svg'),
+    house: require('./assets/img/house.png'),
+    hollyGrailHtml: require('./assets/img/hollyGrailHtml.png')
 }
 
 export default class Presentation extends React.Component {
@@ -76,6 +78,30 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={['zoom']} bgColor="white">
             <Image src={images.howItWorks.replace("/", "")} margin="0px auto 0px" width="700px" />
+        </Slide>
+        <Slide transition={['zoom']} bgColor="gray">
+            <Heading textColor="white">More than just a "markup"</Heading>
+        </Slide>
+        <Slide transition={['zoom']} bgColor="white">
+            <Heading textColor="gray">
+                <span role="img" aria-label="">⚙</span>
+                Semantic
+                <span role="img" aria-label="">📝</span>
+            </Heading>
+        </Slide>
+        <Slide transition={['zoom']} bgColor="white">
+            <Image src={images.house.replace("/", "")} margin="0px auto 0px" width="900px" />
+        </Slide>
+        <Slide transition={['zoom']} bgColor="white">
+            <Image src={images.hollyGrailHtml.replace("/", "")} margin="0px auto 0px" width="900px" />
+        </Slide>
+        <Slide transition={['zoom']} bgColor="gray">
+            <CodePane 
+                textSize="2rem"
+                lang="html"
+                source={require("./assets/code/deck.htmlSemantic")}
+                margin="20px auto" 
+            />
         </Slide>
       </Deck>
     );
