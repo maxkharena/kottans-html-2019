@@ -7,6 +7,8 @@ import {
   Cite,
   Deck,
   Heading,
+  Image,
+  CodePane,
   ListItem,
   List,
   Quote,
@@ -22,16 +24,19 @@ require('normalize.css');
 
 const theme = createTheme(
   {
-    primary: 'white',
-    secondary: '#1F2022',
-    tertiary: '#03A9FC',
-    quaternary: '#CECECE',
+    white: 'white',
+    pink: '#03A9FC',
+    gray: '#2d2d2d',
   },
   {
     primary: 'Montserrat',
     secondary: 'Helvetica',
   }
 );
+
+const images = {
+    howItWorks: require('./assets/howHtmlWork.svg')
+}
 
 export default class Presentation extends React.Component {
   render() {
@@ -41,53 +46,36 @@ export default class Presentation extends React.Component {
         transitionDuration={500}
         theme={theme}
       >
-        <Slide transition={['zoom']} bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Spectacle Boilerplate
+        <Slide transition={['zoom']} bgColor="gray">
+          <Heading size={1} fit caps lineHeight={1} textColor="white">
+            HTML & CSS
           </Heading>
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-            open the presentation/index.js file to get started
-          </Text>
         </Slide>
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={6} textColor="primary" caps>
-            Typography
-          </Heading>
-          <Heading size={1} textColor="secondary">
-            Heading 1
-          </Heading>
-          <Heading size={2} textColor="secondary">
-            Heading 2
-          </Heading>
-          <Heading size={3} textColor="secondary">
-            Heading 3
-          </Heading>
-          <Heading size={4} textColor="secondary">
-            Heading 4
-          </Heading>
-          <Heading size={5} textColor="secondary">
-            Heading 5
-          </Heading>
-          <Text size={6} textColor="secondary">
-            Standard text
-          </Text>
+        <Slide transition={['zoom']} bgColor="white">
+          <Heading textColor="gray">@maxkharena</Heading>
         </Slide>
-        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>
-            Standard List
-          </Heading>
-          <List>
-            <ListItem>Item 1</ListItem>
-            <ListItem>Item 2</ListItem>
-            <ListItem>Item 3</ListItem>
-            <ListItem>Item 4</ListItem>
-          </List>
+        <Slide transition={['zoom']} bgColor="white">
+            <Heading textColor="gray">What is HTML?</Heading>
         </Slide>
-        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
-          <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite>Author</Cite>
-          </BlockQuote>
+        <Slide transition={['zoom']} bgColor="gray">
+            <Heading textColor="pink">30 y.o.</Heading>
+        </Slide>
+        <Slide transition={['zoom']} bgColor="white">
+            <Heading size={3} textColor="secondary" caps>Versions</Heading>
+            <List>
+                <ListItem>HTML	1991</ListItem>
+                <ListItem>HTML 2.0	1995</ListItem>
+                <ListItem>HTML 3.2	1997</ListItem>
+                <ListItem>HTML 4.01	1999</ListItem>
+                <ListItem>HTML5	2014</ListItem>
+                <ListItem>HTML5.1	2016</ListItem>
+            </List>
+        </Slide>
+        <Slide transition={['zoom']} bgColor="white">
+            <Heading textColor="gray">How this works?</Heading>
+        </Slide>
+        <Slide transition={['zoom']} bgColor="white">
+            <Image src={images.howItWorks.replace("/", "")} margin="0px auto 0px" width="700px" />
         </Slide>
       </Deck>
     );
