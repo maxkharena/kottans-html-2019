@@ -1,0 +1,12 @@
+* {color: blue;} /* 0,0,0 */
+
+#link:hover{background-color: green;} /* 1,1,0 */
+
+#link{color: white;} /* 1,0,0 */
+
+a:hover {background-color: yellow;} /* 0,1,1 */
+
+.link{color: tomato;} /* 0,1,0 */
+
+a{color: red } /* 0,0,1 */
+

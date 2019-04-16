@@ -1,0 +1,9 @@
+<head>
+    <!-- simple or "default" viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- if you need width !< then 500px; -->
+    <meta name="viewport" content="width=500, initial-scale=1">
+    <!-- min and max scale and user don't have a permission to scale page -->
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+</head>

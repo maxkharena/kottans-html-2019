@@ -1,0 +1,24 @@
+<table>
+    <thead>
+        <th>header</th>
+        <th>header</th>
+        <th>header</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>td first row</td>
+            <td>td first row</td>
+            <td>td first row</td>
+        </tr>
+        <tr>
+            <td>td second row</td>
+            <td>td second row</td>
+            <td>td second row</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <th>footer</th>
+        <th>footer</th>
+        <th>footer</th>
+    </tfoot>
+</table>

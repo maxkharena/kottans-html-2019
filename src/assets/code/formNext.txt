@@ -1,0 +1,15 @@
+
+<form action="someScript" method="post">
+    <label for="check">Check</label>
+    <input type="checkbox" name="check" id="check">
+    <label for="radio">Radio</label>
+    <input type="radio" name="radio" id="radio">
+    <select name="select" id="select">
+        <option value="someVal">Some value</option>
+        <option value="someOtherVal">Some other value</option>
+    </select>
+    <input type="hidden" name="hidden">
+    <input type="file" name="file">
+    <input type="date" name="bday">
+    <input type="submit" value="Submit">
+</form>

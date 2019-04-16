@@ -1,0 +1,9 @@
+* {color: blue;} /* universal selector */
+
+a{color: blue;}/* tag selector */
+
+#link{color: blue;}/* id selector */
+
+.link{color: blue;}/* class selector */
+
+a:hover{color: red;}/* pseudo class selector */
