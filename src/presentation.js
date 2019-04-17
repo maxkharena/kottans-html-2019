@@ -1,20 +1,15 @@
-/* eslint-disable import/no-webpack-loader-syntax */
 // Import React
 import React from 'react';
 
 // Import Spectacle Core tags
 import {
-  BlockQuote,
-  Cite,
   Deck,
   Heading,
   Image,
   CodePane,
   ListItem,
   List,
-  Quote,
   Slide,
-  Text,
 } from 'spectacle';
 
 // Import theme
@@ -47,6 +42,20 @@ const images = {
     css: require('./assets/img/css.png'),
     lorem: require('./assets/img/lorem.png'),
     block: require('./assets/img/block.png'),
+    flex: require('./assets/img/flex/displayFlex.gif'),
+    axis: require('./assets/img/flex/axis.png'),
+    flexDirection: require('./assets/img/flex/flexRow.gif'),
+    columnReverse: require('./assets/img/flex/columnReverse.gif'),
+    justifyContent: require('./assets/img/flex/justifyContent.gif'),
+    alignItems: require('./assets/img/flex/alignItems.gif'),
+    flexAxis: require('./assets/img/flex/flexAxis.gif'),
+    alignSelf: require('./assets/img/flex/alignSelf.gif'),
+    flexBasis: require('./assets/img/flex/flexBasisColumn.gif'),
+    flexGrow: require('./assets/img/flex/flexGrow.gif'),
+    flexShrink: require('./assets/img/flex/flexShrink.gif'),
+    flexShrink2: require('./assets/img/flex/flexShrink2.gif'),
+    justFlex: require('./assets/img/flex/justFlex.gif'),
+    homework: require('./assets/img/flex/homework.png'),
 }
 
 export default class Presentation extends React.Component {
@@ -236,6 +245,11 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={['zoom']} bgColor="gray">
             <Heading textColor="white">
+                batificity.com
+            </Heading>
+        </Slide>
+        <Slide transition={['zoom']} bgColor="gray">
+            <Heading textColor="white">
                 Box model
             </Heading>
         </Slide>
@@ -249,10 +263,126 @@ export default class Presentation extends React.Component {
             />
         </Slide>
         <Slide transition={['zoom']} bgColor="white">
-            <Image src={images.lorem.replace("/", "")} margin="0px auto 0px" width="500px" />
+            <Image src={images.lorem.replace("/", "")} margin="0px auto 0px" width="600px" />
         </Slide>
         <Slide transition={['zoom']} bgColor="white">
-            <Image src={images.block.replace("/", "")} margin="0px auto 0px" width="500px" />
+            <Image src={images.block.replace("/", "")} margin="0px auto 0px" width="600px" />
+        </Slide>
+        <Slide transition={['zoom']} bgColor="gray">
+            <Heading textColor="white">
+                Flexbox
+            </Heading>
+        </Slide>
+        <Slide transition={['zoom']} bgColor="white">
+            <CodePane
+                lang="css"
+                theme="external"
+                margin="o"
+                textSize="1.5rem"
+                source={require("./assets/code/flex.txt")}
+            />
+            <Image src={images.flex.replace("/", "")} margin="0px auto 0px" width="100%" />
+        </Slide>
+        <Slide transition={['zoom']} bgColor="gray">
+            <Heading textColor="white">
+                Flex axis
+            </Heading>
+            <Image src={images.axis.replace("/", "")} margin="0px auto 0px" width="100%" />
+        </Slide>
+        <Slide transition={['zoom']} bgColor="white">
+            <CodePane
+                lang="css"
+                theme="external"
+                margin="o"
+                textSize="1.5rem"
+                source={require("./assets/code/flexDirection.txt")}
+            />
+            <Image src={images.flexDirection.replace("/", "")} margin="0px auto 0px" width="100%" />
+        </Slide>
+        <Slide transition={['zoom']} bgColor="white">
+            <CodePane
+                lang="css"
+                theme="external"
+                margin="o"
+                textSize="1.5rem"
+                source={require("./assets/code/rowReverse.txt")}
+            />
+            <Image src={images.columnReverse.replace("/", "")} margin="0px auto 0px" width="100%" />
+        </Slide>
+        <Slide transition={['zoom']} bgColor="white">
+            <CodePane
+                lang="css"
+                theme="external"
+                margin="o"
+                textSize="1.5rem"
+                source={require("./assets/code/justifyContent.txt")}
+            />
+            <Image src={images.justifyContent.replace("/", "")} margin="0px auto 0px" width="100%" />
+        </Slide>
+        <Slide transition={['zoom']} bgColor="white">
+            <CodePane
+                lang="css"
+                theme="external"
+                margin="0"
+                textSize="1.5rem"
+                source={require("./assets/code/alignItems.txt")}
+            />
+            <Image src={images.alignItems.replace("/", "")} margin="0px auto 0px" width="100%" />
+        </Slide>
+        <Slide transition={['zoom']} bgColor="white">
+            <Image src={images.flexAxis.replace("/", "")} margin="0px auto 0px" width="100%" />
+        </Slide>
+        <Slide transition={['zoom']} bgColor="white">
+            <CodePane
+                lang="css"
+                theme="external"
+                margin="0"
+                textSize="1.5rem"
+                source={require("./assets/code/alignSelf.txt")}
+            />
+            <Image src={images.alignSelf.replace("/", "")} margin="0px auto 0px" width="100%" />
+        </Slide>
+        <Slide transition={['zoom']} bgColor="white">
+            <CodePane
+                lang="css"
+                theme="external"
+                margin="0"
+                textSize="1.5rem"
+                source={require("./assets/code/flexBasis.txt")}
+            />
+            <Image src={images.flexBasis.replace("/", "")} margin="0px auto 0px" width="100%" />
+        </Slide>
+        <Slide transition={['zoom']} bgColor="white">
+            <Image src={images.flexGrow.replace("/", "")} margin="0px auto 0px" width="100%" />
+        </Slide>
+        <Slide transition={['zoom']} bgColor="white">
+            <Image src={images.flexShrink.replace("/", "")} margin="0px auto 0px" width="100%" />
+        </Slide>
+        <Slide transition={['zoom']} bgColor="white">
+            <Image src={images.flexShrink2.replace("/", "")} margin="0px auto 0px" width="100%" />
+        </Slide>
+        <Slide transition={['zoom']} bgColor="white">
+            <CodePane
+                lang="css"
+                theme="external"
+                margin="0"
+                textSize="1.5rem"
+                source={require("./assets/code/flexCombine.txt")}
+            />
+            <Image src={images.justFlex.replace("/", "")} margin="0px auto 0px" width="100%" />
+        </Slide>
+        <Slide transition={['zoom']} bgColor="gray">
+            <Heading textColor="white">
+                Homework
+            </Heading>
+        </Slide>
+        <Slide transition={['zoom']} bgColor="gray">
+            <Image src={images.homework.replace("/", "")} margin="0px auto 0px" width="500px" />
+        </Slide>
+        <Slide transition={['zoom']} bgColor="gray">
+            <Heading textColor="white">
+                Thx <span role="img" aria-label="">😸</span>
+            </Heading>
         </Slide>
       </Deck>
     );

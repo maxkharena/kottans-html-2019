@@ -1,0 +1,6 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 160px;
+  height: 80px;
+}

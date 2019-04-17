@@ -1,0 +1,7 @@
+.square#one {
+  flex: 2 1 300px;
+}
+.square#two {
+  flex: 1 2 300px;
+}
+// default values 0 (grow) 1 (shrink) и auto (basis).

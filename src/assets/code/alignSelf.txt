@@ -1,0 +1,7 @@
+#container {
+  align-items: flex-start;
+}
+.square#one {
+  align-self: center;
+}
+// Only this square will be centered.
