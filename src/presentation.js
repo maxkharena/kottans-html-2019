@@ -77,9 +77,6 @@ export default class Presentation extends React.Component {
         <Slide transition={['zoom']} bgColor="white">
             <Heading textColor="gray">What is HTML?</Heading>
         </Slide>
-        <Slide transition={['zoom']} bgColor="gray">
-            <Heading textColor="white">Born in CERN</Heading>
-        </Slide>
         <Slide transition={['zoom']} bgColor="white">
             <Heading size={3} textColor="secondary" caps>Versions</Heading>
             <List>
